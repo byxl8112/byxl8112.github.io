@@ -3,10 +3,10 @@ https://byxl8112.github.io/posts/CsOnline.html
 https://byxl8112.github.io/posts/spirngboot2.html
 https://byxl8112.github.io/posts/springMVC.html
 https://byxl8112.github.io/posts/spring6.html
-https://byxl8112.github.io/posts/7.html
-https://byxl8112.github.io/posts/4.html
-https://byxl8112.github.io/posts/6.html
-https://byxl8112.github.io/posts/5.html
-https://byxl8112.github.io/posts/2.html
+https://byxl8112.github.io/posts/MyBatis.html
+https://byxl8112.github.io/posts/JavaWeb.html
+https://byxl8112.github.io/posts/Maven.html
+https://byxl8112.github.io/posts/Git.html
+https://byxl8112.github.io/posts/MySQL.html
 https://byxl8112.github.io/posts/undefined.html
 https://byxl8112.github.io/posts/1.html
