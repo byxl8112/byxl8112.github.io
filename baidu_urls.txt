@@ -1,4 +1,3 @@
-https://byxl8112.github.io/posts/H5.html
 https://byxl8112.github.io/posts/H5C3.html
 https://byxl8112.github.io/posts/Linux.html
 https://byxl8112.github.io/posts/Redis.html
