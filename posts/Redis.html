@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/12-Redis.webp">
 <meta property="article:published_time" content="2023-07-07T04:06:47.000Z">
-<meta property="article:modified_time" content="2023-07-20T11:26:53.218Z">
+<meta property="article:modified_time" content="2023-07-23T09:31:45.897Z">
 <meta property="article:author" content="byxl8112">
 <meta property="article:tag" content="Java笔记">
 <meta name="twitter:card" content="summary">
@@ -53,7 +53,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-07-20 19:26:53'
+  postUpdate: '2023-07-23 17:31:45'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -142,7 +142,7 @@
       }
     }
     detectApple()
-    })(window)</script><link defer rel="stylesheet" href="/css/customm.css" ><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/icon.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/background.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/index_ee.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/zzzw_8112/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20221130105527.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/12-Redis.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">byxl8112</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Redis</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-07T04:06:47.000Z" title="发表于 2023-07-07 12:06:47">2023-07-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-20T11:26:53.218Z" title="更新于 2023-07-20 19:26:53">2023-07-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Java/">Java</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Java/Redis/">Redis</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Redis"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><strong>NoSQL适用场景</strong></p>
+    })(window)</script><link defer rel="stylesheet" href="/css/customm.css" ><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/icon.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/background.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/index_ee.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/zzzw_8112/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20221130105527.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/12-Redis.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">byxl8112</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Redis</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-07T04:06:47.000Z" title="发表于 2023-07-07 12:06:47">2023-07-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-23T09:31:45.897Z" title="更新于 2023-07-23 17:31:45">2023-07-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Java/">Java</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Java/Redis/">Redis</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Redis"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><strong>NoSQL适用场景</strong></p>
 <ul>
 <li>对数据高并发的读写</li>
 <li>海量数据的读写</li>
@@ -1480,7 +1480,702 @@ cat cmd.txt | redis-cli -a abc123 --pipe<span aria-hidden="true" class="line-num
 <li>消息只管发送对应发布者而言 消息是即发即失的，不管接收，也没有 ack 机制，无法保证消息的消费成功</li>
 <li>以上的缺点导致 redis 的 pub&#x2F;sub 就是像是个 小玩具，在生产环境中几乎无任何用武之地，为此 redis 5.0 版本新增了 stream 数据结构，不但支持多播，还支持数据持久化，相比 pub&#x2F;sub 更加强大</li>
 </ol>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://byxl8112.github.io">byxl8112</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://byxl8112.github.io/posts/Redis.html">https://byxl8112.github.io/posts/Redis.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://byxl8112.github.io" target="_blank">byxl8112</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Java%E7%AC%94%E8%AE%B0/">Java笔记</a></div><div class="post_share"><div class="social-share" data-image="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/12-Redis.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/money.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/money.jpg"/></a><div class="post-qr-code-desc"></div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/Linux.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/13-Linux.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Linux</div></div></a></div><div class="next-post pull-right"><a href="/posts/MyBatisPlus.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/11-MyBatis-Plus.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">MyBatis-Plus</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/MySQL.html" title="MySql"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/xianqi-hexo/imgg/11.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-14</div><div class="title">MySql</div></div></a></div><div><a href="/posts/Git.html" title="Git"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/xianqi-hexo/imgg/19.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-15</div><div class="title">Git</div></div></a></div><div><a href="/posts/MyBatis.html" title="MyBatis"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/07-MyBatis.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-23</div><div class="title">MyBatis</div></div></a></div><div><a href="/posts/JavaWeb.html" title="JavaWeb"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/xianqi-hexo/imgg/30.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-22</div><div class="title">JavaWeb</div></div></a></div><div><a href="/posts/Maven.html" title="Maven"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/xianqi-hexo/imgg/24.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-19</div><div class="title">Maven</div></div></a></div><div><a href="/posts/MyBatisPlus.html" title="MyBatis-Plus"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/11-MyBatis-Plus.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-01</div><div class="title">MyBatis-Plus</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/zzzw_8112/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20221130105527.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">byxl8112</div><div class="author-info__description">有志者，事竟成</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><a id="card-info-btn" href="https://byxl8112.github.io"><i class="fab fa-home"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/byxl8112" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1662844460&amp;website=www.qtxml.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">兴趣爱好才是最大的动力，何不与我共同来攀知识高峰！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis%E6%A6%82%E8%BF%B0%E5%92%8C%E5%AE%89%E8%A3%85"><span class="toc-number">1.</span> <span class="toc-text">Redis概述和安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.</span> <span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.2.1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E7%9B%AE%E5%BD%95"><span class="toc-number">1.2.2.</span> <span class="toc-text">安装目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E5%8F%B0%E5%90%AF%E5%8A%A8%EF%BC%88%E4%B8%8D%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.2.3.</span> <span class="toc-text">前台启动（不推荐）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E5%8F%B0%E5%90%AF%E5%8A%A8%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.2.4.</span> <span class="toc-text">后台启动（推荐）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Redis%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.3.</span> <span class="toc-text">Redis介绍</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E4%BA%94%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">常用五大数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%AE%EF%BC%88key%EF%BC%89"><span class="toc-number">2.1.</span> <span class="toc-text">键（key）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%88String%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">字符串（String）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">2.2.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-number">2.2.2.</span> <span class="toc-text">数据结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%EF%BC%88List%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">列表（List）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-1"><span class="toc-number">2.3.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-1"><span class="toc-number">2.3.2.</span> <span class="toc-text">数据结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E5%90%88%EF%BC%88Set%EF%BC%89"><span class="toc-number">2.4.</span> <span class="toc-text">集合（Set）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-2"><span class="toc-number">2.4.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2"><span class="toc-number">2.4.2.</span> <span class="toc-text">数据结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%EF%BC%88Hash%EF%BC%89"><span class="toc-number">2.5.</span> <span class="toc-text">哈希（Hash）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-3"><span class="toc-number">2.5.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3"><span class="toc-number">2.5.2.</span> <span class="toc-text">数据结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88-Zset-shorted-set"><span class="toc-number">2.6.</span> <span class="toc-text">有序集合 Zset(shorted set)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-4"><span class="toc-number">2.6.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4"><span class="toc-number">2.6.2.</span> <span class="toc-text">数据结构</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%B0%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">新数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%8D%E5%9B%BE%EF%BC%88Bitmaps%EF%BC%89"><span class="toc-number">3.1.</span> <span class="toc-text">位图（Bitmaps）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-5"><span class="toc-number">3.1.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bitmaps-%E4%B8%8E-set-%E5%AF%B9%E6%AF%94"><span class="toc-number">3.1.2.</span> <span class="toc-text">Bitmaps 与 set 对比</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%95%B0%E7%BB%9F%E8%AE%A1%EF%BC%88HyperLogLog%EF%BC%89"><span class="toc-number">3.2.</span> <span class="toc-text">基数统计（HyperLogLog）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-6"><span class="toc-number">3.2.1.</span> <span class="toc-text">常用命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%B0%E7%90%86%E7%A9%BA%E9%97%B4%EF%BC%88Geospatial%EF%BC%89"><span class="toc-number">3.3.</span> <span class="toc-text">地理空间（Geospatial）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-7"><span class="toc-number">3.3.1.</span> <span class="toc-text">常用命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%81%EF%BC%88Stream%EF%BC%89"><span class="toc-number">3.4.</span> <span class="toc-text">流（Stream）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E5%B1%82%E7%BB%93%E6%9E%84%E5%92%8C%E5%8E%9F%E7%90%86"><span class="toc-number">3.4.1.</span> <span class="toc-text">底层结构和原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-8"><span class="toc-number">3.4.2.</span> <span class="toc-text">常用命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%8D%E5%9F%9F%EF%BC%88bitfield%EF%BC%89"><span class="toc-number">3.5.</span> <span class="toc-text">位域（bitfield）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis%E6%8C%81%E4%B9%85%E5%8C%96%EF%BC%88RDB-AOF%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">Redis持久化（RDB + AOF）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#RDB"><span class="toc-number">4.1.</span> <span class="toc-text">RDB</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Fork"><span class="toc-number">4.1.1.</span> <span class="toc-text">Fork</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE"><span class="toc-number">4.1.2.</span> <span class="toc-text">配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E5%92%8C%E4%BF%AE%E5%A4%8D-dump-rdb-%E6%96%87%E4%BB%B6"><span class="toc-number">4.1.3.</span> <span class="toc-text">检查和修复 dump.rdb 文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">4.1.4.</span> <span class="toc-text">总结</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A6%E5%8F%91RDB%E5%BF%AB%E7%85%A7%E7%9A%84%E6%83%85%E5%86%B5"><span class="toc-number">4.1.4.1.</span> <span class="toc-text">触发RDB快照的情况</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A6%81%E7%94%A8%E5%BF%AB%E7%85%A7"><span class="toc-number">4.1.4.2.</span> <span class="toc-text">禁用快照</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RDB%E4%BC%98%E5%8C%96%E5%8F%82%E6%95%B0"><span class="toc-number">4.1.5.</span> <span class="toc-text">RDB优化参数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AOF"><span class="toc-number">4.2.</span> <span class="toc-text">AOF</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#AOF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="toc-number">4.2.1.</span> <span class="toc-text">AOF持久化工作流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E5%86%99%E5%9B%9E%E7%AD%96%E7%95%A5"><span class="toc-number">4.2.2.</span> <span class="toc-text">三种写回策略</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%BF%9D%E5%AD%98%E8%AF%B4%E6%98%8E"><span class="toc-number">4.2.3.</span> <span class="toc-text">文件保存说明</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Multi-part-AOF"><span class="toc-number">4.2.3.1.</span> <span class="toc-text">Multi-part AOF</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%80%E5%90%AF-appendonly-yes"><span class="toc-number">4.2.3.2.</span> <span class="toc-text">开启 appendonly yes</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#aof%E6%96%87%E4%BB%B6-%E4%BF%9D%E5%AD%98%E8%B7%AF%E5%BE%84"><span class="toc-number">4.2.3.3.</span> <span class="toc-text">aof文件-保存路径</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#aof%E6%96%87%E4%BB%B6-%E4%BF%9D%E5%AD%98%E5%90%8D%E7%A7%B0"><span class="toc-number">4.2.3.4.</span> <span class="toc-text">aof文件-保存名称</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E"><span class="toc-number">4.2.4.</span> <span class="toc-text">配置文件说明</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A3%E5%B8%B8%E6%81%A2%E5%A4%8D"><span class="toc-number">4.2.4.1.</span> <span class="toc-text">正常恢复</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E6%81%A2%E5%A4%8D"><span class="toc-number">4.2.4.2.</span> <span class="toc-text">异常恢复</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E5%8A%BF"><span class="toc-number">4.2.4.3.</span> <span class="toc-text">优势</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%A3%E5%8A%BF"><span class="toc-number">4.2.4.4.</span> <span class="toc-text">劣势</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AOF%E9%87%8D%E5%86%99%E6%9C%BA%E5%88%B6"><span class="toc-number">4.2.5.</span> <span class="toc-text">AOF重写机制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B"><span class="toc-number">4.2.5.1.</span> <span class="toc-text">案例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-number">4.2.5.2.</span> <span class="toc-text">原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AOF-%E4%BC%98%E5%8C%96%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3"><span class="toc-number">4.2.5.3.</span> <span class="toc-text">AOF 优化配置详解</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AOF%E6%80%BB%E7%BB%93"><span class="toc-number">4.2.6.</span> <span class="toc-text">AOF总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RDB-AOF%E6%B7%B7%E5%90%88%E6%8C%81%E4%B9%85%E5%8C%96"><span class="toc-number">4.3.</span> <span class="toc-text">RDB+AOF混合持久化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E6%97%B6%E5%BC%80%E5%90%AF%E4%B8%A4%E7%A7%8D%E6%8C%81%E4%B9%85%E5%8C%96%E6%96%B9%E5%BC%8F"><span class="toc-number">4.3.1.</span> <span class="toc-text">同时开启两种持久化方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%AF%E7%BC%93%E5%AD%98%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.4.</span> <span class="toc-text">纯缓存模式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1"><span class="toc-number">5.</span> <span class="toc-text">事务</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Redis%E4%BA%8B%E5%8A%A1"><span class="toc-number">5.1.</span> <span class="toc-text">Redis事务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-9"><span class="toc-number">5.1.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%A7%E8%A1%8C%E6%83%85%E5%86%B5"><span class="toc-number">5.1.2.</span> <span class="toc-text">执行情况</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A3%E5%B8%B8%E6%89%A7%E8%A1%8C"><span class="toc-number">5.1.2.1.</span> <span class="toc-text">正常执行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%94%BE%E5%BC%83%E4%BA%8B%E5%8A%A1"><span class="toc-number">5.1.2.2.</span> <span class="toc-text">放弃事务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%A8%E4%BD%93%E8%BF%9E%E5%9D%90"><span class="toc-number">5.1.2.3.</span> <span class="toc-text">全体连坐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%A4%E5%A4%B4%E5%80%BA%E4%B8%BB"><span class="toc-number">5.1.2.4.</span> <span class="toc-text">冤头债主</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#watch%E7%9B%91%E6%8E%A7"><span class="toc-number">5.1.2.5.</span> <span class="toc-text">watch监控</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%A1%E9%81%93"><span class="toc-number">6.</span> <span class="toc-text">管道</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0-1"><span class="toc-number">6.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B-1"><span class="toc-number">6.2.</span> <span class="toc-text">案例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-1"><span class="toc-number">6.3.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis%E5%8F%91%E5%B8%83-x2F-%E8%AE%A2%E9%98%85%EF%BC%88pub-x2F-sub%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">Redis发布&#x2F;订阅（pub&#x2F;sub）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0-2"><span class="toc-number">7.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-10"><span class="toc-number">7.2.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pub-x2F-Sub%E7%BC%BA%E7%82%B9"><span class="toc-number">7.3.</span> <span class="toc-text">Pub&#x2F;Sub缺点</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/HTML5.html" title="HTML5"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/14-H5C3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTML5"/></a><div class="content"><a class="title" href="/posts/HTML5.html" title="HTML5">HTML5</a><time datetime="2023-07-10T00:18:42.000Z" title="发表于 2023-07-10 08:18:42">2023-07-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/CSS3.html" title="CSS3"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/14-H5C3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS3"/></a><div class="content"><a class="title" href="/posts/CSS3.html" title="CSS3">CSS3</a><time datetime="2023-07-10T00:18:42.000Z" title="发表于 2023-07-10 08:18:42">2023-07-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/H5C3.html" title="HTML5"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/14-H5C3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTML5"/></a><div class="content"><a class="title" href="/posts/H5C3.html" title="HTML5">HTML5</a><time datetime="2023-07-10T00:18:42.000Z" title="发表于 2023-07-10 08:18:42">2023-07-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Linux.html" title="Linux"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/13-Linux.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux"/></a><div class="content"><a class="title" href="/posts/Linux.html" title="Linux">Linux</a><time datetime="2023-07-07T07:02:48.000Z" title="发表于 2023-07-07 15:02:48">2023-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Redis.html" title="Redis"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/12-Redis.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redis"/></a><div class="content"><a class="title" href="/posts/Redis.html" title="Redis">Redis</a><time datetime="2023-07-07T04:06:47.000Z" title="发表于 2023-07-07 12:06:47">2023-07-07</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023  <i id="heartbeat" class="fa fas fa-heartbeat"></i> byxl8112</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>var preloader = {
+<h1 id="Redis复制（replica）"><a href="#Redis复制（replica）" class="headerlink" title="Redis复制（replica）"></a>Redis复制（replica）</h1><h2 id="概述-3"><a href="#概述-3" class="headerlink" title="概述"></a>概述</h2><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230311155500746.png" alt="image-20230311155500746" style="zoom:33%;" /> 
+
+<ul>
+<li><p>主从复制，是指将一台Redis服务器的数据，复制到其他的Redis服务器。前者称为主节点(master)，后者称为从节点(slave)；</p>
+</li>
+<li><p>数据的复制是单向的，只能由主节点到从节点。</p>
+</li>
+<li><p>默认情况下，每台Redis服务器都是主节点，且一个主节点可以有多个从节点（或没有从节点），但一个从节点只能有一个主节点。</p>
+</li>
+<li><p>当 master 数据变化时，自动将新的数据异步同步到其他的 slave 数据库</p>
+</li>
+<li><p>有了主从，当 master 挂掉的时候，运维让从库过来接管，服务就可以继续，否则 master 需要经过数据恢复和重启的过程，这就可能会拖很长的时间，影响线上业务的持续服务。</p>
+</li>
+</ul>
+<p><font color='red'><strong>主从复制的作用</strong></font></p>
+<ul>
+<li><strong>数据冗余</strong>：主从复制实现了数据的热备份，是持久化之外的一种数据冗余方式。</li>
+<li><strong>故障恢复</strong>：当主节点出现问题时，可以由从节点提供服务，实现快速的故障恢复；实际上是一种服务的冗余。</li>
+<li><strong>负载均衡</strong>：在主从复制的基础上，配合读写分离，可以由主节点提供写服务，由从节点提供读服务（即写Redis数据时应用连接主节点，读Redis数据时应用连接从节点），分担服务器负载；尤其是在写少读多的场景下，通过多个从节点分担读负载，可以大大提高Redis服务器的并发量。</li>
+<li><strong>高可用基石</strong>：主从复制还是哨兵和集群能够实施的基础，因此说主从复制是Redis高可用的基础。</li>
+</ul>
+<p><font color='red'><strong>权限细节</strong></font></p>
+<p>master 如果配置了 requirepass 参数，需要密码登录</p>
+<p>那么 slave 就要配置 masterauth 来设置校验密码，否则的话 master 会拒绝 slave 的访问请求</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721150413254.png" alt="image-20230721150413254"></p>
+<h2 id="常用命令-11"><a href="#常用命令-11" class="headerlink" title="常用命令"></a>常用命令</h2><ul>
+<li><code>info replication</code><ul>
+<li>建立连接关系后，可以查看复制节点的主从关系和配置信息</li>
+</ul>
+</li>
+<li><code>replicaof 主库IP 主库端口</code>   （用配置文件操作）<ul>
+<li>一般写入进 redis.conf 配置文件内</li>
+</ul>
+</li>
+<li><code>slaveof 主库IP 主库端口</code>   （用命令操作。）<ul>
+<li>每次与 master 断开之后，都需要重新连接，除非你配置进 redis.conf 文件</li>
+<li>在运行期间修改 slave 节点的信息，如果该数据库已经是某个主数据库的从数据库，那么会停止和原数据库的同步关系 转而和新的主数据库同步，重新拜码头。</li>
+</ul>
+</li>
+<li><code>slaveof no one</code> <ul>
+<li>使当前数据库停止与其他数据库的同步，转成主数据库，自立为王</li>
+</ul>
+</li>
+</ul>
+<h2 id="案例-2"><a href="#案例-2" class="headerlink" title="案例"></a>案例</h2><p>创建三个虚拟机，一个master两个slave</p>
+<p>每台都安装redis，拷贝多个 redis.conf 文件，<code>redis6379.conf</code> 、<code>redis6380.conf</code>、<code>redis6381.conf</code> </p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721152345946.png" alt="image-20230721152345946" style="zoom: 50%;" />
+
+<p><strong>小口诀：</strong></p>
+<ul>
+<li>三边网络相互ping通 且注意防火墙配置</li>
+</ul>
+<p><strong>三大命令：</strong></p>
+<ul>
+<li>主从复制<ul>
+<li><code>replicaof 主库IP 主库端口</code></li>
+<li>配从（库）不配主（库）</li>
+</ul>
+</li>
+<li>改换门庭<ul>
+<li><code>replicaof 新主库IP 新主库端口</code></li>
+</ul>
+</li>
+<li>自立为王<ul>
+<li><code>slaveof no one</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="操作细节"><a href="#操作细节" class="headerlink" title="操作细节"></a>操作细节</h3><ol>
+<li><p>开启 <code>daemonize yes</code> </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721153350536.png" alt="image-20230721153350536"></p>
+</li>
+<li><p>注释掉 <code>bind 127.0.0.1</code> </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721153409328.png" alt="image-20230721153409328"></p>
+</li>
+<li><p><code>protected-mode no</code> </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721153431030.png" alt="image-20230721153431030"></p>
+</li>
+<li><p>指定端口</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721153528662.png" alt="image-20230721153528662"></p>
+</li>
+<li><p>指定当前工作目录，dir</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721153552906.png" alt="image-20230721153552906"></p>
+</li>
+<li><p>pid 文件名字，pidfile</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721153618383.png" alt="image-20230721153618383"></p>
+</li>
+<li><p>log 文件名字，logfile</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721153657742.png" alt="image-20230721153657742"></p>
+</li>
+<li><p>requirepass  设置密码</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721153736947.png" alt="image-20230721153736947"></p>
+</li>
+<li><p>dump.rdb 名字</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721153754504.png" alt="image-20230721153754504" style="zoom: 50%;" /> 
+</li>
+<li><p>aof文件，appendfilename   （非必须）</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721153839374.png" alt="image-20230721153839374"></p>
+</li>
+<li><p>从机访问主机的通行密码 masterauth，必须  （<strong>从机需要配置，主机不用</strong>）</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721154217008.png" alt="image-20230721154217008"></p>
+</li>
+</ol>
+<h3 id="一主二仆"><a href="#一主二仆" class="headerlink" title="一主二仆"></a>一主二仆</h3><h4 id="方案1：配置文件固定写死"><a href="#方案1：配置文件固定写死" class="headerlink" title="方案1：配置文件固定写死"></a>方案1：配置文件固定写死</h4><ul>
+<li><p>配置文件执行：<code>replicaof 主库IP 主库端口</code> </p>
+</li>
+<li><p>配从（库）不配主（库）：</p>
+<ul>
+<li><p>配置从机 6380</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230311202003826.png" alt="image-20230311202003826"></p>
+</li>
+<li><p>配置从机6381</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230311202020172.png" alt="image-20230311202020172"></p>
+</li>
+</ul>
+</li>
+<li><p>先 master 后两台 slave 依次启动  （注意从机的 <code>redis-cli -a 111111 -p 6380</code>） 其中必须要写 <code>-p 6380</code></p>
+</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721154608952.png" alt="image-20230721154608952"></p>
+<ul>
+<li><p>查看主从关系（主机日志）   <code>vim 6379.log</code></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230311202708291.png" alt="image-20230311202708291"></p>
+</li>
+<li><p>备机日志 </p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230311202743095.png" alt="image-20230311202743095"></p>
+</li>
+<li><p>使用 <code>info replication</code> 命令查看</p>
+ <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721155402368.png" alt="image-20230721155402368" style="zoom:50%;" /></li>
+</ul>
+<p><font color='red'><strong>注意：</strong></font>如果从机连接不到主机，可以关闭防火墙，重启服务</p>
+<ul>
+<li><p>首先修改 redis.conf 中的相关配置 </p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230722153256101.png" alt="image-20230722153256101" style="zoom: 50%;" /> 
+</li>
+<li><p>关闭主机的防火墙 <code>systemctl stop firewalld</code></p>
+</li>
+<li><p>关闭 redis 服务</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230722153402041.png" alt="image-20230722153402041" style="zoom:50%;" /></li>
+</ul>
+<p><strong>主从问题演示：</strong></p>
+<ul>
+<li><p>从机可以执行写命令</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230311203234915.png" alt="image-20230311203234915" style="zoom:50%;" /> 
+</li>
+<li><p>从机切入点问题</p>
+<p>从机宕机后，主机继续写入，当从机恢复过来了也可以读取到主机写入的，master写，slave跟</p>
+</li>
+<li><p>主机 shutdown 后，从机会上位吗？</p>
+<p>当主机 shutdown 后，从机会原地待命，从机数据还可以正常使用，这时候在等待主机恢复。</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230311203934135.png" alt="image-20230311203934135" style="zoom:50%;" /> 
+
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721160324338.png" alt="image-20230721160324338"></p>
+</li>
+<li><p>主机 shutdown 后，重启后主从关系还在吗？从机还能顺利复制吗？</p>
+<p>主从关系还在</p>
+ <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721160516298.png" alt="image-20230721160516298" style="zoom:67%;" /></li>
+</ul>
+<h4 id="方案2：命令操作手动指定"><a href="#方案2：命令操作手动指定" class="headerlink" title="方案2：命令操作手动指定"></a>方案2：命令操作手动指定</h4><ul>
+<li><p>从机 停机去掉配置文件中的配置项，3台目前都是主机状态，各不从属</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721160812187.png" alt="image-20230721160812187" style="zoom:50%;" /></li>
+</ul>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721161323561.png" alt="image-20230721161323561"></p>
+<ul>
+<li><p>预设的从机上执行命令  <code>slaveof 主库IP 主库端口</code> </p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721161451739.png" alt="image-20230721161451739" style="zoom: 50%;" /></li>
+</ul>
+<p><font color='red'><strong>注意：</strong></font></p>
+<p>用命令使用的话，2台从机重启后，主从关系不存在了，说明名命令使用的话只是单次生效的，想要永久是主从关系的话，还是得用配置文件固定写死他们之间的主从关系。</p>
+<h3 id="薪火相传"><a href="#薪火相传" class="headerlink" title="薪火相传"></a>薪火相传</h3><ul>
+<li><p>上一个 slave 可以是下一个 slave 的 master，slave 同样可以接收其他 slaves 的连接和同步请求，那么该 slave 作为了链条中的下一个的master，可以有效减轻 主master 的写压力</p>
+</li>
+<li><p>中途变更转向：会清除之前的数据，重新建立拷贝最新的</p>
+</li>
+<li><p><code>slaveof 新主库IP 新主库端口</code></p>
+</li>
+</ul>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721162544178.png" alt="image-20230721162544178" style="zoom:50%;" />
+
+<p>在 6381 redis下，<code>slaveof 192.168.111.172 6380</code>  ，将6381的老大换成 6380</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721164234184.png" alt="image-20230721164234184" style="zoom:50%;" /> 
+
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721164333765.png" alt="image-20230721164333765" style="zoom:50%;" /> 
+
+<h3 id="反客为主"><a href="#反客为主" class="headerlink" title="反客为主"></a>反客为主</h3><p><code>slaveof no one</code> ：使用当当前数据库停止与其他数据库</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721164546217.png" alt="image-20230721164546217" style="zoom:50%;" /> 
+
+<h2 id="复制原理和工作流程"><a href="#复制原理和工作流程" class="headerlink" title="复制原理和工作流程"></a>复制原理和工作流程</h2><ul>
+<li>slave 启动，同步初请<ul>
+<li>slave 启动成功连接到 master 后会发送一个 sync 命令</li>
+<li>slave 首次全新连接 master，一次完全同步（全量复制）将被自动执行，slave 自身原有数据会被 master数据覆盖清除</li>
+</ul>
+</li>
+<li>首次连接，全量复制<ul>
+<li>master节点收到sync命令后会开始在后台保存快照（即RDB持久化，主从复制时会触发RDB)，同时收集所有接收到的用于修改数据集命令缓存起来，master节点执行RDB持久化完后， master将rdb快照文件和所有缓存的命令发送到所有slave，以完成一次完全同步</li>
+<li>slave服务在接收到数据库文件数据后，将其存盘并加载到内存中，从而完成复制初始化</li>
+</ul>
+</li>
+<li>心跳持续，保持通信<ul>
+<li><code>repl-ping-replica-period 10</code>  ：10秒保持一次通信</li>
+</ul>
+</li>
+<li>进入平稳，增量复制<ul>
+<li>master 继续将新的所有收集到的修改命令自动依次传给 slave，完成同步</li>
+</ul>
+</li>
+<li>从机下线，重连续传<ul>
+<li>master 会检查 backlog 里面的 offset，master 和 slave 都会保存一个复制的 offset 还有一个 masterId，offset 是保存在 backlog 中的。<font color='red'>master 只会把已经复制的 offset 后面的数据复制给 slave</font>，类似断点续传</li>
+</ul>
+</li>
+</ul>
+<h2 id="复制的缺点"><a href="#复制的缺点" class="headerlink" title="复制的缺点"></a>复制的缺点</h2><ul>
+<li><p>复制延时，信号衰减</p>
+<p>由于所有的写操作都是先在 master 上操作，然后同步更新到 slave 上，所以从 master 同步到 slave 机器有一定的延迟，当系统很繁忙的时候，延迟问题会更加严重，slave机器数量的增加也会使这个文件更加严重。</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721170600478.png" alt="image-20230721170600478" style="zoom:50%;" /> 
+</li>
+<li><p>master 挂了怎么办</p>
+<p>主机shutdown了，从机不懂，原地待命，从机数据可以正常使用，等待主机重启。</p>
+<ul>
+<li>默认情况下，不会在 slave 节点中自动重选一个 master</li>
+<li>此时，每次都要人工干预</li>
+</ul>
+</li>
+</ul>
+<h1 id="Redis哨兵（sentinel）"><a href="#Redis哨兵（sentinel）" class="headerlink" title="Redis哨兵（sentinel）"></a>Redis哨兵（sentinel）</h1><h2 id="概述-4"><a href="#概述-4" class="headerlink" title="概述"></a>概述</h2><p>吹哨人巡查监控后台master主机是否故障，如果故障了根据投票数自动 将某一个从库转换为新主库，继续对外服务</p>
+<p><strong>作用：</strong> 俗称，无人值守运维</p>
+<ol>
+<li><p>监控 redis 运行状态，包括 master 和 slave</p>
+</li>
+<li><p>当 master 宕机，能自动将 slave 切换成新的 master</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230721171524083.png" alt="image-20230721171524083" style="zoom:50%;" /></li>
+</ol>
+<p><strong>能干嘛：</strong></p>
+<ul>
+<li>主从监控<ul>
+<li>监控主从 redis 库运行是否正常</li>
+</ul>
+</li>
+<li>消息通知<ul>
+<li>哨兵可以将故障转移的结果发送给客户端</li>
+</ul>
+</li>
+<li>故障转移<ul>
+<li>如果 master 异常，则会进行主从切换，将其中一个 slave 作为新的 master</li>
+</ul>
+</li>
+<li>配置中心，客户端通过连接哨兵来获得当前 redis 服务的主节点地址</li>
+</ul>
+<p><strong>前提说明</strong></p>
+<ul>
+<li><p>3个哨兵</p>
+<p>自动监控和维护集群，不存放数据，只是吹哨人</p>
+</li>
+<li><p>一主二从</p>
+<p>用于数据读取和存放</p>
+</li>
+</ul>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230722090827547.png" alt="image-20230722090827547" style="zoom: 50%;" /> 
+
+<h2 id="步骤-1"><a href="#步骤-1" class="headerlink" title="步骤"></a>步骤</h2><h3 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h3><ul>
+<li><p>&#x2F;myredis 目录下新建或者拷贝 sentinel.conf 文件，名字不能错</p>
+<ul>
+<li><code>cp sentinel.conf /myredis/</code></li>
+</ul>
+</li>
+<li><p>先看看 &#x2F;opt 目录下默认的 sentinel.conf 文件的内容</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230722091057561.png" alt="image-20230722091057561" style="zoom:50%;" /> 
+</li>
+<li><p>使用 <code>vim sentinel.conf</code> 进入vim界面，重点参数说明</p>
+<ul>
+<li><p><code>bind</code> ：服务监听地址，用于客户端连接，默认本机地址</p>
+</li>
+<li><p><code>daemonize</code> ：是否以后台 daemon 方式运行</p>
+</li>
+<li><p><code>protected-mode</code> ：安全保护模式</p>
+</li>
+<li><p><code>port</code> ：端口</p>
+</li>
+<li><p><code>logfile</code> ：日志文件路径</p>
+</li>
+<li><p><code>pidfile</code> ：pid 文件路径</p>
+</li>
+<li><p><code>dir</code> ：工作目录</p>
+</li>
+<li><p><code>sentinel monitor &lt;master-name&gt; &lt;ip&gt; &lt;redis-port&gt; &lt;quorum&gt;</code> ：其中quorum表示投票数</p>
+<ul>
+<li>设置要监控的 master 服务器</li>
+<li>quorum 表示最少有几个哨兵认可客观下线，同意故障迁移的法定票数</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230722093855380.png" alt="image-20230722093855380"></p>
+</li>
+</ul>
+<blockquote>
+<p>我们知道，网络是不可靠的，有时候一个sentinel会因为网络堵塞而误以为一个master redis已经死掉了，在 sentinel集群环境下需要多个sentinel互相沟通来确认某个master是否真的死了，quorum这个参数是进行客观 下线的一个依据，意思是至少有quorum个sentinel认为这个master有故障，才会对这个master进行下线以及 故障转移。因为有的时候，某个sentinel节点可能因为自身网络原因，导致无法连接master，而此时master并 没有出现故障，所以，这就需要多个sentinel都一致认为该master有问题，才可以进行下一步操作，这就保证 了公平性和高可用。</p>
+</blockquote>
+<ul>
+<li><code>sentinel auth-pass &lt;master-name&gt; &lt;password&gt;</code> ：master设置了密码，连接master服务的密码</li>
+</ul>
+</li>
+<li><p>其他参数说明</p>
+<ul>
+<li><p><code>sentinel down-after-milliseconds &lt;master-name&gt; &lt;milliseconds&gt;</code> ：</p>
+<p>指定多少毫秒之后，主节点没有应答哨兵，此时哨兵主观上认为主节点下线</p>
+</li>
+<li><p><code>sentinel parallel-syncs &lt;master-name&gt; &lt;nums&gt;</code> ：</p>
+<p>表示允许并行同步的slave个数，当Master挂了后，哨兵会选出新的Master,此时，剩余的slave会向新的master发起同步数据</p>
+</li>
+<li><p><code>sentinel failover-timeout &lt;master-name&gt; &lt;milliseconds&gt;</code> :</p>
+<p>故障转移的超时时间，进行故障转移时，如果超过设置的毫秒，表示故障转移失败</p>
+</li>
+<li><p><code>sentinel notification-script &lt;master-name&gt; &lt;script-path&gt;</code> ：</p>
+<p>配置当某一事件发生时所需要执行的脚本</p>
+</li>
+<li><p><code>sentinel client-reconfig-script &lt;master-name&gt; &lt;script-path&gt;</code> </p>
+<p>客户端重新配置主节点参数脚本</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>哨兵 sentinel 文件通用配置</strong></p>
+<p>这里是在IP为192.168.200.129这台虚拟机中配置的三份sentinel</p>
+<ul>
+<li><p>sentinel26379.conf</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">bind 0.0.0.0
+daemonize yes
+protected-mode no
+port 26379
+logfile "/myredis/sentinel26379.log"
+pidfile /var/run/redis-sentinel26379.pid
+dir /myredis
+sentinel monitor mymaster 192.168.200.129 6379 2
+sentinel auth-pass mymaster abc123<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>sentinel26380.conf</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">bind 0.0.0.0
+daemonize yes
+protected-mode no
+port 26380
+logfile "/myredis/sentinel26380.log"
+pidfile /var/run/redis-sentinel26380.pid
+dir /myredis
+sentinel monitor mymaster 192.168.200.129 6379 2
+sentinel auth-pass mymaster abc123<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>sentinel26381.conf</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">bind 0.0.0.0
+daemonize yes
+protected-mode no
+port 26381
+logfile "/myredis/sentinel26381.log"
+pidfile /var/run/redis-sentinel26381.pid
+dir /myredis
+sentinel monitor mymaster 192.168.200.129 6379 2
+sentinel auth-pass mymaster abc123<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<p>master主机配置文件说明：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230722145417539.png" alt="image-20230722145417539"> </p>
+<p><strong>先启动 一主二从 3个 redis实例实例，测试正常的主从复制</strong></p>
+<ul>
+<li><p>架构说明</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312093624411.png" alt="image-20230312093624411" style="zoom:50%;" /> 
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312093637099.png" alt="image-20230312093637099"> </p>
+</li>
+<li><p>redis 6379 &#x2F; 6380 &#x2F; 6381.conf 内容，填写主从配置</p>
+<ul>
+<li><p>主机 6379</p>
+<p>主机后面可能会变成从机，也需要设置访问密码，设置<code>masterauth &quot;abc123&quot;</code> </p>
+<p>不然后续会报错 <code>master_link_status:down</code></p>
+</li>
+</ul>
+</li>
+<li><p>三台不同的虚拟机实例，启动三部真实机器示例并连接</p>
+<p><code>redis-cli -a abc123 -p 6379</code>  </p>
+<p><code>redis-cli -a abc123 -p 6380</code> </p>
+<p><code>redis-cli -a abc123 -p 6381</code></p>
+</li>
+</ul>
+<h3 id="哨兵部分"><a href="#哨兵部分" class="headerlink" title="哨兵部分"></a>哨兵部分</h3><ul>
+<li><p>在主机6379中启动3个哨兵，完成监控</p>
+<pre class="line-numbers language-哨兵，启动！" data-language="哨兵，启动！"><code class="language-哨兵，启动！">redis-sentinel sentinel26379.conf --sentinel
+redis-sentinel sentinel26380.conf --sentinel
+redis-sentinel sentinel26381.conf --sentinel<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>启动3个哨兵监控后再测试一次主从复制</p>
+</li>
+<li><p>使原有的 master down 机</p>
+<ul>
+<li>手动关闭 6379 服务器，模拟 master down 机</li>
+</ul>
+</li>
+<li><p>结果</p>
+<ul>
+<li>两台从机数据正常</li>
+<li>会根据投票数从其他两台从机上选取一个作为master</li>
+<li>之前down机的master重启会变为从机</li>
+</ul>
+</li>
+<li><p>问题</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230723093245394.png" alt="image-20230723093245394" style="zoom:50%;" /> 
+</li>
+<li><p>Broken pipe</p>
+<ul>
+<li><p>pipe 是管道的意思，管道里面是数据流，通常是 从 文件或者 套接字读取的数据。当该管道从另一端突然崩溃关闭时，会发生数据突然中断，即是 broken，对于 socket 来说，可能是网络被拔出或另一端的进程崩溃</p>
+</li>
+<li><p>解决</p>
+<p>其实当该异常产生的时候，对于服务端来说，并没有多少影响。因为可能是某个客户端突然中止了进程导致崩溃导致了该错误</p>
+</li>
+<li><p>总结</p>
+<p>其实当该异常产生的时候，对于服务端来说，并没有多少影响。因为可能是某个客户端突然中止了进程导致崩溃导致了该错误</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312095222544.png" alt="image-20230312095222544"></p>
+</li>
+</ul>
+</li>
+<li><p>投票新选</p>
+<ul>
+<li><p>sentinel26379.log</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312095903020.png" alt="image-20230312095903020"></p>
+</li>
+<li><p>sentinel26380.log</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312095922085.png" alt="image-20230312095922085"></p>
+</li>
+<li><p>sentinel26381.log</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312095937279.png" alt="image-20230312095937279"></p>
+</li>
+<li><p>此时 6381 被选为新的 master，上位成功</p>
+ <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312100046138.png" alt="image-20230312100046138" style="zoom: 50%;" />
+</li>
+<li><p>以前的 6379 从 master 降级为 slave</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312100130475.png" alt="image-20230312100130475"></p>
+</li>
+<li><p>6380还是从机，只不过换了个新老大 6381,6380还是 slave</p>
+</li>
+</ul>
+</li>
+<li><p>配置文件</p>
+<ul>
+<li>文件的内容，在运行期间会被 sentinel 动态改变</li>
+<li>master - slave 切换后，master_redis.conf 、sentinel.conf 的内容都会发生改变，即 master_redis.conf 中会多一行 slaveof 的配置，sentinel.conf 的监控目标会随之调换</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>生产都是不同机房，不同服务器，很少出现三个 哨兵全挂掉的情况</p>
+<p>可以同时监控多个 master，一行一个</p>
+</blockquote>
+<h2 id="哨兵原理"><a href="#哨兵原理" class="headerlink" title="哨兵原理"></a>哨兵原理</h2><p>当一个主从配置中的master失效之后，sentinel可以选举出一个新的master 用于自动接替原master的工作，主从配置中的其他redis服务器自动指向新的master同步数据。 一般建议sentinel采取奇数台，防止某一台sentinel无法连接到master导致误切换</p>
+<h3 id="运行流程-故障切换"><a href="#运行流程-故障切换" class="headerlink" title="运行流程 故障切换"></a>运行流程 故障切换</h3><ul>
+<li><p>三个哨兵监控一主二从，正常运行中</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230723100301354.png" alt="image-20230723100301354" style="zoom:33%;" /> 
+</li>
+<li><p>SDown主观下线（Subjectively Down）</p>
+<ul>
+<li>SDOWN（主观不可用）是在 <strong>单个sentinel自己主观上</strong>检测到的关于master的状态，从 sentinel 的角度来看，如果发送了Ping后，在一定时间内没有收到合法的回复，就达到了SDOWN的条件。</li>
+<li>sentinel 配置文件中的 down-after-millisecond 设置了判断主观下线的时间长度</li>
+</ul>
+<p><font color='red'><strong>说明：</strong></font></p>
+<p>所谓主观下线（Subjectively Down， 简称 SDOWN）指的是<strong>单个Sentinel实例</strong>对服务器做出的下线判断，即单个sentinel认为某个服务下线（有可能是接收不到订阅，之间的网络不通等等原因）。主观下线就是说如果服务器在[sentinel down-after-milliseconds]给定的毫秒数之内没有回应PING命令或者返回一个错误消息， 那么这个Sentinel会主观的（<strong>单方面的</strong>）认为这个master不可以用了</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230723100027870.png" alt="image-20230723100027870" style="zoom:50%;" />
+
+<pre class="line-numbers language-none"><code class="language-none">sentinel down-after-milliseconds &lt;masterName&gt; &lt;timeout&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>表示master被当前sentinel实例认定为失效的间隔时间，这个配置其实就是进行主观下线的一个依据</p>
+<p>master在多长时间内一直没有给Sentine返回有效信息，则认定该master主观下线。也就是说如果多久没联系上redis-servevr，认为这个redis-server进入到失效（SDOWN）状态。</p>
+</li>
+<li><p>ODown客观下线（Objectively Down）</p>
+<ul>
+<li>ODOWN需要一定数量的 sentinel，多个哨兵达成一致意见才能认为一个 master 客观上已经 down 掉</li>
+</ul>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230723100421498.png" alt="image-20230723100421498" style="zoom: 50%;" />
+
+<p><strong>quorum这个参数是进行客观下线的一个依据</strong>，法定人数 &#x2F; 法定票数。</p>
+<p>意思是至少有 quorum 个 sentinel 认为这个 master 有故障才会对这个master进行下线以及故障转移。因为有的时候，某个sentinel 节点可能因为自身网络原因导致无法连接master,而此时master并没有出现故障，所以这就需要多个sentinel都一致认为该master有问题，才可以进行下一步操作，这就保证了公平性和高可用。</p>
+</li>
+<li><p>选举出领导者哨兵（哨兵中选出兵王）</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230723100716644.png" alt="image-20230723100716644" style="zoom:50%;" />
+
+<ul>
+<li><p>当主节点被判断客观下线以后，各个哨兵节点会进行协商， 先选举出一个领导者哨兵节点（兵王）并由该领导者节	点， 也即被选举出的兵王进行failover(故障迁移）</p>
+</li>
+<li><p>sentinel26379.log</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312102841293.png" alt="image-20230312102841293"></p>
+</li>
+<li><p>sentinel26380.log</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312102929005.png" alt="image-20230312102929005"></p>
+</li>
+<li><p>sentinel26381.log</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312102957390.png" alt="image-20230312102957390"></p>
+</li>
+<li><p>哨兵领导者，兵王如何选出来的？</p>
+<ul>
+<li><p>Raft算法</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230723101131392.png" alt="image-20230723101131392" style="zoom:50%;" /></li>
+</ul>
+<p>监视该主节点的所有哨兵都有可能被选为领导者，选举使用的算法是Raft算法；Raft算法的基本思路是先到先得： 即在一轮选举中，哨兵A向B发送成为领导者的申请，如果B没有同意过其他哨兵，则会同意A成为领导者</p>
+</li>
+</ul>
+</li>
+<li><p>由兵王开始推动故障切换流程并选出一个新master</p>
+</li>
+</ul>
+<p><strong>新主登基</strong></p>
+<ul>
+<li><p>某个Slave被选中成为新的master</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230723103615524.png" alt="image-20230723103615524" style="zoom:33%;" /> 
+</li>
+<li><p>选出新master的规则，剩余slave节点健康前提下</p>
+<ul>
+<li><p>redis.conf 文件中，优先级 slave-priority 或者 replica-priority 最高的从节点（数字越小优先级越高）</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230723103735447.png" alt="image-20230723103735447" style="zoom: 50%;" />
+</li>
+<li><p>复制偏移位置 offset 最大的从节点</p>
+</li>
+<li><p>最小 Run ID 的从节点  -&gt; 字典顺序，ASCII 码</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>群臣俯首</strong></p>
+<ul>
+<li>一朝天子一朝臣，换个码头重新拜</li>
+<li>执行slaveof no one命令让选出来的从节点成为新的主节点，并通过slaveof命令让其他节点成为其从节点</li>
+<li>Sentinel leader会对选举出的新master执行slaveof no one操作，将其提升为master节点 </li>
+<li>Sentinel leader向其它slave发送命令，让剩余的slave成为新的master节点的slave</li>
+</ul>
+<p><strong>旧主拜服</strong></p>
+<ul>
+<li>老master回来也认怂</li>
+<li>将之前已下线的老master设置为新选出的新master的从节点，当老master重新上线后，它会成为新master的从节点</li>
+<li>Sentinel leader会让原来的master降级为slave并恢复正常工作。</li>
+</ul>
+<p><strong>总结</strong> ：上述的 failover 操作均有 sentinel 自己独自完成，完全无需人工干预</p>
+<h2 id="哨兵使用建议"><a href="#哨兵使用建议" class="headerlink" title="哨兵使用建议"></a>哨兵使用建议</h2><ul>
+<li>哨兵节点的数量应为多个，哨兵本身应该集群，保证高可用 </li>
+<li>哨兵节点的数量应该是奇数 </li>
+<li>各个哨兵节点的配置应一致</li>
+<li>如果哨兵节点部署在Docker等容器里面，尤其要注意端口的正确映射 </li>
+<li>哨兵集群+主从复制，并不能保证数据零丢失</li>
+</ul>
+<h1 id="Redis集群（cluster）"><a href="#Redis集群（cluster）" class="headerlink" title="Redis集群（cluster）"></a>Redis集群（cluster）</h1><h2 id="概述-5"><a href="#概述-5" class="headerlink" title="概述"></a>概述</h2><p><strong>由于数据量过大，单个 master 复制集</strong> 难以承担，因此需要对多个复制集进行集群，形成水平扩展。每个复制集只负责整个数据集的一部分，这就是 redis 集群，其作用就是在 多个 redis节点间 共享数据的程序集</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312110549308.png" alt="image-20230312110549308" style="zoom:50%;" />
+
+<ul>
+<li>Redis集群是一个提供在多个 Redis 节点间共享数据的程序集</li>
+<li>Redis集群可以支持多个master</li>
+</ul>
+<p><strong>能干嘛：</strong></p>
+<ul>
+<li>Redis集群支持多个 master，每个 master 又可以挂载多个 slave<ul>
+<li>读写分离</li>
+<li>支持数据的高可用</li>
+<li>支持海量数据的读写存储操作</li>
+</ul>
+</li>
+<li>由于 Cluster 自带 Sentinel 的故障转移机制，内置了高可用的支持，无需再使用哨兵功能</li>
+<li>客户端与 Redis 的节点连接，不再需要连接集群中所有的节点，只需要任意连接集群中的一个可用节点即可</li>
+<li>槽位 slot 负责分配到各个物理服务节点，由对应的集群来负责维护节点、插槽和数据之间的关系</li>
+</ul>
+<h2 id="集群算法-分片-槽位slot"><a href="#集群算法-分片-槽位slot" class="headerlink" title="集群算法-分片-槽位slot"></a>集群算法-分片-槽位slot</h2><p><strong>官网文档：</strong></p>
+<p>The cluster’s key space is split into 16384 slots, effectively setting an upper limit for the cluster size of 16384 master nodes (however, the suggested max size of nodes is on the order of ~ 1000 nodes).</p>
+<p>Each master node in a cluster handles a subset of the 16384 hash slots. The cluster is <strong>stable</strong> when there is no cluster reconfiguration in progress (i.e. where hash slots are being moved from one node to another). When the cluster is stable, a single hash slot will be served by a single node (however the serving node can have one or more replicas that will replace it in the case of net splits or failures, and that can be used in order to scale read operations where reading stale data is acceptable).</p>
+<p>The base algorithm used to map keys to hash slots is the following (read the next paragraph for the hash tag exception to this rule):</p>
+<pre class="line-numbers language-text" data-language="text"><code class="language-text">HASH_SLOT = CRC16(key) mod 16384<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>The CRC16 is specified as follows:</p>
+<ul>
+<li>Name: XMODEM (also known as ZMODEM or CRC-16&#x2F;ACORN)</li>
+<li>Width: 16 bit</li>
+<li>Poly: 1021 (That is actually x^16 + x^12 + x^5 + 1)</li>
+<li>Initialization: 0000</li>
+<li>Reflect Input byte: False</li>
+<li>Reflect Output CRC: False</li>
+<li>Xor constant to output CRC: 0000</li>
+<li>Output for “123456789”: 31C3</li>
+</ul>
+<p>14 out of 16 CRC16 output bits are used (this is why there is a modulo 16384 operation in the formula above).</p>
+<p>In our tests CRC16 behaved remarkably well in distributing different kinds of keys evenly across the 16384 slots.</p>
+<p><strong>Note</strong>: A reference implementation of the CRC16 algorithm used is available in the Appendix A of this document.</p>
+<p>集群的密钥空间被分成16384个插槽，有效地设置了16384个主节点的集群大小上限(但是，建议的最大节点大小大约为1000个节点)。</p>
+<p>集群中的每个主节点处理16384个哈希槽的子集。当没有正在进行的群集重新配置时，集群是<strong>稳定的</strong> (即散列片段从一个节点移动到另一个节点)。当集群稳定时，单个哈希槽将由单个节点提供服务(但是，服务节点可以有一个或多个副本，在网络拆分或故障的情况下替换它，并且可以用于在读取陈旧数据是可接受的情况下扩展读取操作)。</p>
+<h3 id="槽位slot与分片"><a href="#槽位slot与分片" class="headerlink" title="槽位slot与分片"></a>槽位slot与分片</h3><p><strong>Redis集群的数据分片</strong></p>
+<p>Redis 集群投有使用一致性hash，而是引入了<strong>哈希槽</strong>的概念.。</p>
+<p>Redis 集群有16384个哈希槽，每个key通过CRC16校验后对16384取模来决定放置哪个槽。集群的每个节点负责一部分hash槽， 举个例子，比如当前集群有3个节点，那么：</p>
+ <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230723151526071.png" alt="image-20230723151526071" style="zoom:50%;" />
+
+<ul>
+<li><p>分片：</p>
+<p>使用Redis集群时我们会将存储的数据分散到多台redis机器上，这称为分片。简言之，集群中的每个Redis实例都被认为是整个数据的一个分片。</p>
+</li>
+<li><p>如何找到给定key的分片</p>
+<p>为了找到给定key的分片，我们对key进行 <strong>CRC16(key)</strong> 算法处理并通过对总分片数量取模。然后，使用确定性哈希函数，这意味着给定的 key 将多次始终映射到同一个分片，我们可以推断将来读取特定 key 的位置</p>
+</li>
+</ul>
+<p><font color='red'><strong>槽位与分片的优势：</strong></font></p>
+<p>最大优势：方便扩容和数据分派查找</p>
+<p>这种结构很容易添加或者删除节点。比如如果我想新添加个节点D，我需要从节点A,B,C中的部分槽到D上。如果我想移除节点 A，需要将A中的槽移到B和C节点上，然后将没有任何槽的A节点从集群中移除即可。由于从一个节点将哈希槽移动到另一个节点 并不会停止服务，所以无论添加删除或者改变某个节点的哈希槽的数量都不会造成集群不可用的状态。</p>
+<h3 id="slot槽位映射解决方案"><a href="#slot槽位映射解决方案" class="headerlink" title="slot槽位映射解决方案"></a>slot槽位映射解决方案</h3><h4 id="哈希取余分区"><a href="#哈希取余分区" class="headerlink" title="哈希取余分区"></a>哈希取余分区</h4><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230723152749559.png" alt="image-20230723152749559" style="zoom:50%;" /> 
+
+<p>2亿条记录就是2亿个k,v，我们单机不行必须要分布式多机，假设有3台机器构成一个集群，用户每次读写操作都是根据公式： <code>hash(key) % N</code> 个机器台数，计算出哈希值，用来决定数据映射到哪一个节点上。</p>
+<p><font color='red'><strong>优点：</strong></font></p>
+<p>简单粗暴，直接有效，只需要预估好数据规划好节点，例如3台、8台、10台，就能保证一段时间的数据支撑。使用Hash算法让固定的一部分 到同一台服务器上，这样每台服务器固定处理一部分请求（并维护这些请求的信息），起到负载均衡 + 分而治之的作用。</p>
+<p><font color='red'><strong>缺点：</strong></font></p>
+<p>原来规划好的节点，进行扩容或者缩容就比较麻烦了额，不管扩缩，每次数据变动导致节点有变动，映射关系需要重新进行计算，在服 个数固定不变时没有问题，如果需要弹性扩容或故障停机的情况下，原来的取模公式就会发生变化：Hash(key)&#x2F;3会变成Hash(key)&#x2F;?。此 地址经过取余运算的结果将发生很大变化，根据公式获取的服务器也会变得不可控。 某个redis机器岩机了，由于台数数量变化，会导致hash取余全部数据重新洗牌。</p>
+<h4 id="一致性哈希算法"><a href="#一致性哈希算法" class="headerlink" title="一致性哈希算法"></a>一致性哈希算法</h4><p>一致性哈希算法在1997年由麻省理工学院中提出的，设计目标是为了解决 <strong>分布式缓存数据变动和映射问题</strong>，某个机器宕机了，分母数量改变了，自然取余数不OK了</p>
+<p><strong>能干嘛：</strong></p>
+<p>提出一致性Hash解决方案，目的是当服务器个数发生变动时，尽量减少影响客户端到服务器的映射关系</p>
+<p><strong>3大步骤</strong></p>
+<ul>
+<li>算法构建一致性哈希环</li>
+</ul>
+<p>一致性哈希算法必然有个 hash 函数并按照算法产生 hash 值，这个 算法的所有可能 hash值 构成一个全量集，这个集合可以成为一个 hash空间 [0，2^32 - 1]，这个是一个线性空间，但是在算法中，我们通过适当的逻辑控制将它首尾相连 （0 &#x3D; 2 ^ 32），这样让它逻辑上形成了一个环形空间</p>
+<p>他也是按照使用取模的方法， <strong>前面笔记介绍的节点取模法是对节点（服务器）的数量进行取模。而一致性 Hash 算法是对 2 ^ 32 取模</strong>，简单来说，<strong>一致性 Hash 算法将整个哈希值空间组织成一个虚拟的圆环</strong>，如 假设某哈希函数 H 的值空间 为 0 - 2 ^ 32 - 1(即哈希值是一个 32 位 无符号整形)，整个 哈希环 如下图 ： 整个空间 <strong>按顺序针方向组织</strong>，圆环的正上方的点代表 0 ，0 点右侧的第一个点代表 1，以此类推，2，3，4 … … 直到 2 ^ 32 - 1 ，也就是说 0 点左侧的第一个点 代表 2 ^ 32 - 1， 0 和 2 ^ 32 - 1 在 零点中方向重合，我们把这个由 2 ^ 32 个点组成的圆环成为 hash 环</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312122518309.png" alt="image-20230312122518309" style="zoom:50%;" /> 
+
+<ul>
+<li>服务器IP节点映射</li>
+</ul>
+<p>将集群中各个 IP 节点映射到 环上的某一个位置</p>
+<p>将各个服务器使用 hash 进行一个 hash，具体可以选择服务器的 IP 或 主机名作为关键字进行哈希，这样每台机器就能确定其在哈希环上的位置。假设 4 个节点 Node A、B、C、D，经过 IP 地址的 <strong>哈希函数</strong> 计算（ hash(ip) ）,使用 IP 地址 哈希后在环空间的位置如下</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312123059222.png" alt="image-20230312123059222" style="zoom:50%;" /> 
+
+<ul>
+<li>key落到服务器的落键规则</li>
+</ul>
+<p>当我们需要存储一个 kv 键值对时，首先计算 key 的hash 值，hash(key),，将这个key 使用相同的函数 Hash 计算出 哈希值 并确定在此数据环上的位置，<strong>从此位置沿环顺时针 “行走”</strong>，第一台遇到的服务器就是其应该定位到的服务器，并将该键值对存储在该节点上</p>
+<p>如我们有Object A、Object B、Object C、Object D四个数据对象，经过哈希计算后，在环空间上的位置如下：根据一致性Hash算法，数据A会被定为到Node A上，B被定为到Node B上，C被定为到Node C上，D被定为到Node D上。</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312123607085.png" alt="image-20230312123607085" style="zoom:50%;" /> 
+
+<p><font color='red'><strong>优点：</strong></font></p>
+<ul>
+<li>哈希算法的 <strong>容错性</strong></li>
+</ul>
+<p>假设 Node C 宕机，可以看到此时 A、B、D 不会受到影响。一般的，在 一致性 Hash 算法中，如果一台服务器不可用，则 <font color='red'>受影响的数据仅仅是此服务器到其环空间中前一台服务器（即沿逆时针方向行走遇到的第一台服务器） 之间数据，其他不会受到影响。</font>简单说，C 挂了，受到影响的 只是 B、C 之间 的数据 <strong>且这些数据会转移到 D 进行存储</strong></p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312124123568.png" alt="image-20230312124123568" style="zoom:50%;" /> 
+
+<ul>
+<li>哈希算法的 <strong>扩展性</strong></li>
+</ul>
+<p>数据量增加了，需要增加一台 Node x，X 的位置在 A 和 B 之间，那受到影响的只有 A 到 X 之间的 数据，重新把从 A 到 X 的 数据录入到 X 上即可，不会导致 hash 取余全部数据重新洗牌</p>
+ <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312124457726.png" alt="image-20230312124457726" style="zoom:50%;" />
+
+<p><font color='red'><strong>缺点：</strong></font></p>
+<p>一致性哈希算法的数据倾斜问题：</p>
+<p>一致性 Hash 算法在服务 <strong>节点太少时</strong>，容易因为 节点分布不均而造成 <strong>数据倾斜</strong>（被缓存的对象大部分集中缓存在某一台服务器上） 问题，例如只有两台服务器时</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312124647270.png" alt="image-20230312124647270" style="zoom:50%;" /> 
+
+<p><font color='red'><strong>总结：</strong></font></p>
+<p>为了在节点数目发生改变时尽可能少的迁移数据，将所有的存储节点排列在收尾相接的Hash环上，每个key在计算Hash后会顺时针找到临近的存储节点存放。而当有节点加入或退出时仅影响该节点在Hash环上顺时针相邻的后续节点。</p>
+<p><strong>优点</strong></p>
+<p>加入和删除节点只影响哈希环中顺时针方向的相邻的节点，对其他节点无影响。</p>
+<p><strong>缺点</strong></p>
+<p>数据的分布和节点的位置有关，因为这些节点不是均匀的分布在哈希环上的，所以数据在进行存储时达不到均匀分布的效果。</p>
+<h4 id="哈希槽分区（重要）"><a href="#哈希槽分区（重要）" class="headerlink" title="哈希槽分区（重要）"></a>哈希槽分区（重要）</h4><p><code>HASH_SLOT = CRC17(key) mod 16384</code> </p>
+<p>哈希槽实质上就是一个数组，数组[0，2^14 - 1] 形成 hash slot 空间</p>
+<p><strong>能干什么：</strong></p>
+<p>解决均匀分配的问题，在数据和节点之间又加入了一层，把这层称为哈希槽（slot），用于管理数据和节点之间的关系，现在就相当于节点上放的是槽，槽里放的是数据</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230723161333012.png" alt="image-20230723161333012" style="zoom:50%;" /> 
+
+<p>槽解决的是粒度问题，相当于把粒度变大了，这样便于数据移动。哈希解决的是映射问题，使用 key 的哈希值来计算所在的槽，便于数据分配</p>
+<p><strong>多少个hash槽：</strong></p>
+<p>一个集群只能有16384个槽，编号0-16383（0-2^14-1）。这些槽会分配给集群中的所有主节点，分配策略没有要求。 集群会记录节点和槽的对应关系，解决了节点和槽的关系后，接下来就需要对key求哈希值，然后对16384取模，余数是几key就落入对应的槽里 HASH_SLOT&#x3D;CRC16(key)mod 16384。以槽为单位移动数据，因为槽的数目是固定的，处理起来比较容易，这样数据移动问题就解决了。</p>
+<p><font color='red'><strong>哈希槽计算：</strong></font></p>
+<p>Redis 集群中内置了 16384 个哈希槽，redis 会根据节点数量大致均等的将哈希槽映射到不同的节点。当需要在 Redis 集群中放置一个 key-value 时，redis 先对 key 使用 crc16算法算出一个结果，然后用结果对 16384 求余数 <code>[CRC16(key) % 16384]</code>，这样每个 key 都会对应一个编号在 0-16383 之间的哈希槽，也就是映射到某个节点上。如下代码，key 之 A、B 在 Node2，key之 C 落在Node3上。</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230723162149231.png" alt="image-20230723162149231"  /> 
+
+<h3 id="Redis集群最大槽数是16384个"><a href="#Redis集群最大槽数是16384个" class="headerlink" title="Redis集群最大槽数是16384个"></a>Redis集群最大槽数是16384个</h3><p>redis 集群并没有用 一致性 hash 而是引入了 哈希槽的 概念。 <strong>redis 集群有 16384 个哈希槽</strong>，每个 key 通过 CRC16 校验后 对 16384 进行取模来决定防止哪个槽，集群的每一个节点负责一部分槽。但是 为什么是 16384 个呢？</p>
+<blockquote>
+<p>CRC16算法产生的hash值有16bit，该算法可以产生2^16&#x3D;65536个值。</p>
+<p>换句话说值是分布在0~65535之间，有更大的65536不用为什么只用16384就够？</p>
+<p>作者在做mod运算的时候，为什么不mod65536，而选择mod16384？ HASH_SLOT &#x3D; CRC16(key) mod 65536为什么没启用</p>
+<p><strong><a target="_blank" rel="noopener" href="https://github.com/redis/redis/issues/2576">https://github.com/redis/redis/issues/2576 </a></strong></p>
+</blockquote>
+<h4 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h4><p>The reason is:</p>
+<ol>
+<li>Normal heartbeat packets carry the full configuration of a node, that can be replaced in an idempotent way with the old in order to update an old config. This means they contain the slots configuration for a node, in raw form, that uses 2k of space with16k slots, but would use a prohibitive 8k of space using 65k slots.</li>
+<li>At the same time it is unlikely that Redis Cluster would scale to more than 1000 mater nodes because of other design tradeoffs.</li>
+</ol>
+<p>So 16k was in the right range to ensure enough slots per master with a max of 1000 maters, but a small enough number to propagate the slot configuration as a raw bitmap easily. Note that in small clusters the bitmap would be hard to compress because when N is small the bitmap would have slots&#x2F;N bits set that is a large percentage of bits set.</p>
+<p>正常心跳包携带节点的完整配置，可以用旧配置以幂等的方式替换，以便更新旧配置。这意味着它们包含原始形式的节点插槽配置，该配置使用2k空间和16k插槽，但使用65k插槽时会使用禁止性的8k空间。<br>同时，由于其他设计上的权衡，Redis集群不太可能扩展到超过1000个主节点。<br>因此，16k是在正确的范围内，以确保每个主机有足够的插槽，最多1000个maters，但这个数字足够小，可以轻松地将插槽配置作为原始位图进行传播。注意，在小集群中，位图将很难压缩，因为当N较小时，位图将具有 slot &#x2F; N 位集 占设置为的很大百分比</p>
+ <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/typora-picture/image-20230312194505703.png" alt="image-20230312194505703" style="zoom:67%;" />
+
+<p><strong>（1）如果槽位为635536，发送心跳信息的消息头达8K，发送的心跳包过于庞大</strong></p>
+<p>在消息头中最占空间的是myslots[CLUSTER_SLOTS&#x2F;8]。 当槽位为65536时，这块的大小是: 65536÷8÷1024&#x3D;8kb</p>
+<p>在消息头中最占空间的是myslots[CLUSTER_SLOTS&#x2F;8]。 当槽位为16384时，这块的大小是: 16384÷8÷1024&#x3D;2kb</p>
+<p>因为每秒钟，redis节点需要发送一定数量的ping消息作为心跳包，如果槽位为65536，这个ping消息的消息头太大了，浪费带宽。</p>
+<p><strong>（2）redis的集群主节点数量基本不可能超过1000个</strong></p>
+<p>集群节点越多，心跳包的消息体内携带的数据越多。如果节点过1000个，也会导致网络拥堵。因此redis作者不建议redis cluster节点数量超过1000个。 那么，对于节点数在1000以内的redis cluster集群，16384个槽位够用了。没有必要拓展到65536个。</p>
+<p><strong>（3）槽位越小，节点少的情况下，压缩比高，容易传输</strong></p>
+<p>Redis主节点的配置信息中它所负责的哈希槽是通过一张bitmap的形式来保存的，在传输过程中会对bitmap进行压缩，但是如果bitmap的填充率 slots &#x2F; N 很高的话(N表示节点数)，bitmap的压缩率就很低。 如果节点数很少，而哈希槽数量很多的话，bitmap的压缩率就很低。</p>
+<p><font color='red'><strong>注意：</strong></font></p>
+<p>Redis Cluster uses asynchronous replication between nodes, and <strong>last failover wins</strong> implicit merge function. This means that the last elected master dataset eventually replaces all the other replicas. There is always a window of time when it is possible to lose writes during partitions. However these windows are very different in the case of a client that is connected to the majority of masters, and a client that is connected to the minority of masters.</p>
+<p>Redis集群使用节点间异步复制，最后一次故障转移赢得隐式合并功能。这意味着最后选择的主数据集最终会替换所有其他副本。在分区期间，总有一个时间窗口可能会丢失写入。然而，在一个客户端连接到大多数主机，一个客户端连接到少数主机的情况下，这些窗口是非常不同的。</p>
+<blockquote>
+<p>redis 集群<strong>不保证强一致性</strong>，这意味着在特定的条件下，redis 集群可能会丢掉一些被系统收到的写入请求命令</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://byxl8112.github.io">byxl8112</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://byxl8112.github.io/posts/Redis.html">https://byxl8112.github.io/posts/Redis.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://byxl8112.github.io" target="_blank">byxl8112</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Java%E7%AC%94%E8%AE%B0/">Java笔记</a></div><div class="post_share"><div class="social-share" data-image="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/12-Redis.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/money.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/money.jpg"/></a><div class="post-qr-code-desc"></div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/Linux.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/13-Linux.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Linux</div></div></a></div><div class="next-post pull-right"><a href="/posts/MyBatisPlus.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/11-MyBatis-Plus.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">MyBatis-Plus</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/Git.html" title="Git"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/xianqi-hexo/imgg/19.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-15</div><div class="title">Git</div></div></a></div><div><a href="/posts/MySQL.html" title="MySql"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/xianqi-hexo/imgg/11.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-14</div><div class="title">MySql</div></div></a></div><div><a href="/posts/Maven.html" title="Maven"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/xianqi-hexo/imgg/24.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-19</div><div class="title">Maven</div></div></a></div><div><a href="/posts/MyBatis.html" title="MyBatis"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/07-MyBatis.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-23</div><div class="title">MyBatis</div></div></a></div><div><a href="/posts/JavaWeb.html" title="JavaWeb"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://npm.elemecdn.com/xianqi-hexo/imgg/30.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-22</div><div class="title">JavaWeb</div></div></a></div><div><a href="/posts/MyBatisPlus.html" title="MyBatis-Plus"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/11-MyBatis-Plus.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-01</div><div class="title">MyBatis-Plus</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/zzzw_8112/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20221130105527.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">byxl8112</div><div class="author-info__description">有志者，事竟成</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">19</div></a></div><a id="card-info-btn" href="https://byxl8112.github.io"><i class="fab fa-home"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/byxl8112" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1662844460&amp;website=www.qtxml.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">兴趣爱好才是最大的动力，何不与我共同来攀知识高峰！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis%E6%A6%82%E8%BF%B0%E5%92%8C%E5%AE%89%E8%A3%85"><span class="toc-number">1.</span> <span class="toc-text">Redis概述和安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.</span> <span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.2.1.</span> <span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E7%9B%AE%E5%BD%95"><span class="toc-number">1.2.2.</span> <span class="toc-text">安装目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E5%8F%B0%E5%90%AF%E5%8A%A8%EF%BC%88%E4%B8%8D%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.2.3.</span> <span class="toc-text">前台启动（不推荐）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E5%8F%B0%E5%90%AF%E5%8A%A8%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.2.4.</span> <span class="toc-text">后台启动（推荐）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Redis%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.3.</span> <span class="toc-text">Redis介绍</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E4%BA%94%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">常用五大数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%AE%EF%BC%88key%EF%BC%89"><span class="toc-number">2.1.</span> <span class="toc-text">键（key）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%88String%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">字符串（String）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">2.2.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-number">2.2.2.</span> <span class="toc-text">数据结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%EF%BC%88List%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">列表（List）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-1"><span class="toc-number">2.3.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-1"><span class="toc-number">2.3.2.</span> <span class="toc-text">数据结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E5%90%88%EF%BC%88Set%EF%BC%89"><span class="toc-number">2.4.</span> <span class="toc-text">集合（Set）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-2"><span class="toc-number">2.4.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-2"><span class="toc-number">2.4.2.</span> <span class="toc-text">数据结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%EF%BC%88Hash%EF%BC%89"><span class="toc-number">2.5.</span> <span class="toc-text">哈希（Hash）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-3"><span class="toc-number">2.5.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-3"><span class="toc-number">2.5.2.</span> <span class="toc-text">数据结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E9%9B%86%E5%90%88-Zset-shorted-set"><span class="toc-number">2.6.</span> <span class="toc-text">有序集合 Zset(shorted set)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-4"><span class="toc-number">2.6.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-4"><span class="toc-number">2.6.2.</span> <span class="toc-text">数据结构</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%B0%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">新数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%8D%E5%9B%BE%EF%BC%88Bitmaps%EF%BC%89"><span class="toc-number">3.1.</span> <span class="toc-text">位图（Bitmaps）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-5"><span class="toc-number">3.1.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bitmaps-%E4%B8%8E-set-%E5%AF%B9%E6%AF%94"><span class="toc-number">3.1.2.</span> <span class="toc-text">Bitmaps 与 set 对比</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%95%B0%E7%BB%9F%E8%AE%A1%EF%BC%88HyperLogLog%EF%BC%89"><span class="toc-number">3.2.</span> <span class="toc-text">基数统计（HyperLogLog）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-6"><span class="toc-number">3.2.1.</span> <span class="toc-text">常用命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%B0%E7%90%86%E7%A9%BA%E9%97%B4%EF%BC%88Geospatial%EF%BC%89"><span class="toc-number">3.3.</span> <span class="toc-text">地理空间（Geospatial）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-7"><span class="toc-number">3.3.1.</span> <span class="toc-text">常用命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%81%EF%BC%88Stream%EF%BC%89"><span class="toc-number">3.4.</span> <span class="toc-text">流（Stream）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E5%B1%82%E7%BB%93%E6%9E%84%E5%92%8C%E5%8E%9F%E7%90%86"><span class="toc-number">3.4.1.</span> <span class="toc-text">底层结构和原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-8"><span class="toc-number">3.4.2.</span> <span class="toc-text">常用命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%8D%E5%9F%9F%EF%BC%88bitfield%EF%BC%89"><span class="toc-number">3.5.</span> <span class="toc-text">位域（bitfield）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis%E6%8C%81%E4%B9%85%E5%8C%96%EF%BC%88RDB-AOF%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">Redis持久化（RDB + AOF）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#RDB"><span class="toc-number">4.1.</span> <span class="toc-text">RDB</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Fork"><span class="toc-number">4.1.1.</span> <span class="toc-text">Fork</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE"><span class="toc-number">4.1.2.</span> <span class="toc-text">配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E6%9F%A5%E5%92%8C%E4%BF%AE%E5%A4%8D-dump-rdb-%E6%96%87%E4%BB%B6"><span class="toc-number">4.1.3.</span> <span class="toc-text">检查和修复 dump.rdb 文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">4.1.4.</span> <span class="toc-text">总结</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A6%E5%8F%91RDB%E5%BF%AB%E7%85%A7%E7%9A%84%E6%83%85%E5%86%B5"><span class="toc-number">4.1.4.1.</span> <span class="toc-text">触发RDB快照的情况</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A6%81%E7%94%A8%E5%BF%AB%E7%85%A7"><span class="toc-number">4.1.4.2.</span> <span class="toc-text">禁用快照</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RDB%E4%BC%98%E5%8C%96%E5%8F%82%E6%95%B0"><span class="toc-number">4.1.5.</span> <span class="toc-text">RDB优化参数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AOF"><span class="toc-number">4.2.</span> <span class="toc-text">AOF</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#AOF%E6%8C%81%E4%B9%85%E5%8C%96%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="toc-number">4.2.1.</span> <span class="toc-text">AOF持久化工作流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E5%86%99%E5%9B%9E%E7%AD%96%E7%95%A5"><span class="toc-number">4.2.2.</span> <span class="toc-text">三种写回策略</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%BF%9D%E5%AD%98%E8%AF%B4%E6%98%8E"><span class="toc-number">4.2.3.</span> <span class="toc-text">文件保存说明</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Multi-part-AOF"><span class="toc-number">4.2.3.1.</span> <span class="toc-text">Multi-part AOF</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%80%E5%90%AF-appendonly-yes"><span class="toc-number">4.2.3.2.</span> <span class="toc-text">开启 appendonly yes</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#aof%E6%96%87%E4%BB%B6-%E4%BF%9D%E5%AD%98%E8%B7%AF%E5%BE%84"><span class="toc-number">4.2.3.3.</span> <span class="toc-text">aof文件-保存路径</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#aof%E6%96%87%E4%BB%B6-%E4%BF%9D%E5%AD%98%E5%90%8D%E7%A7%B0"><span class="toc-number">4.2.3.4.</span> <span class="toc-text">aof文件-保存名称</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%B4%E6%98%8E"><span class="toc-number">4.2.4.</span> <span class="toc-text">配置文件说明</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A3%E5%B8%B8%E6%81%A2%E5%A4%8D"><span class="toc-number">4.2.4.1.</span> <span class="toc-text">正常恢复</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E6%81%A2%E5%A4%8D"><span class="toc-number">4.2.4.2.</span> <span class="toc-text">异常恢复</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E5%8A%BF"><span class="toc-number">4.2.4.3.</span> <span class="toc-text">优势</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%A3%E5%8A%BF"><span class="toc-number">4.2.4.4.</span> <span class="toc-text">劣势</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AOF%E9%87%8D%E5%86%99%E6%9C%BA%E5%88%B6"><span class="toc-number">4.2.5.</span> <span class="toc-text">AOF重写机制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B"><span class="toc-number">4.2.5.1.</span> <span class="toc-text">案例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-number">4.2.5.2.</span> <span class="toc-text">原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AOF-%E4%BC%98%E5%8C%96%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3"><span class="toc-number">4.2.5.3.</span> <span class="toc-text">AOF 优化配置详解</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AOF%E6%80%BB%E7%BB%93"><span class="toc-number">4.2.6.</span> <span class="toc-text">AOF总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RDB-AOF%E6%B7%B7%E5%90%88%E6%8C%81%E4%B9%85%E5%8C%96"><span class="toc-number">4.3.</span> <span class="toc-text">RDB+AOF混合持久化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E6%97%B6%E5%BC%80%E5%90%AF%E4%B8%A4%E7%A7%8D%E6%8C%81%E4%B9%85%E5%8C%96%E6%96%B9%E5%BC%8F"><span class="toc-number">4.3.1.</span> <span class="toc-text">同时开启两种持久化方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%AF%E7%BC%93%E5%AD%98%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.4.</span> <span class="toc-text">纯缓存模式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8B%E5%8A%A1"><span class="toc-number">5.</span> <span class="toc-text">事务</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Redis%E4%BA%8B%E5%8A%A1"><span class="toc-number">5.1.</span> <span class="toc-text">Redis事务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-9"><span class="toc-number">5.1.1.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%A7%E8%A1%8C%E6%83%85%E5%86%B5"><span class="toc-number">5.1.2.</span> <span class="toc-text">执行情况</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A3%E5%B8%B8%E6%89%A7%E8%A1%8C"><span class="toc-number">5.1.2.1.</span> <span class="toc-text">正常执行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%94%BE%E5%BC%83%E4%BA%8B%E5%8A%A1"><span class="toc-number">5.1.2.2.</span> <span class="toc-text">放弃事务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%A8%E4%BD%93%E8%BF%9E%E5%9D%90"><span class="toc-number">5.1.2.3.</span> <span class="toc-text">全体连坐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%A4%E5%A4%B4%E5%80%BA%E4%B8%BB"><span class="toc-number">5.1.2.4.</span> <span class="toc-text">冤头债主</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#watch%E7%9B%91%E6%8E%A7"><span class="toc-number">5.1.2.5.</span> <span class="toc-text">watch监控</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%A1%E9%81%93"><span class="toc-number">6.</span> <span class="toc-text">管道</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0-1"><span class="toc-number">6.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B-1"><span class="toc-number">6.2.</span> <span class="toc-text">案例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-1"><span class="toc-number">6.3.</span> <span class="toc-text">总结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis%E5%8F%91%E5%B8%83-x2F-%E8%AE%A2%E9%98%85%EF%BC%88pub-x2F-sub%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">Redis发布&#x2F;订阅（pub&#x2F;sub）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0-2"><span class="toc-number">7.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-10"><span class="toc-number">7.2.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pub-x2F-Sub%E7%BC%BA%E7%82%B9"><span class="toc-number">7.3.</span> <span class="toc-text">Pub&#x2F;Sub缺点</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis%E5%A4%8D%E5%88%B6%EF%BC%88replica%EF%BC%89"><span class="toc-number">8.</span> <span class="toc-text">Redis复制（replica）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0-3"><span class="toc-number">8.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-11"><span class="toc-number">8.2.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%88%E4%BE%8B-2"><span class="toc-number">8.3.</span> <span class="toc-text">案例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%BB%86%E8%8A%82"><span class="toc-number">8.3.1.</span> <span class="toc-text">操作细节</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%B8%BB%E4%BA%8C%E4%BB%86"><span class="toc-number">8.3.2.</span> <span class="toc-text">一主二仆</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%A1%881%EF%BC%9A%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%9B%BA%E5%AE%9A%E5%86%99%E6%AD%BB"><span class="toc-number">8.3.2.1.</span> <span class="toc-text">方案1：配置文件固定写死</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E6%A1%882%EF%BC%9A%E5%91%BD%E4%BB%A4%E6%93%8D%E4%BD%9C%E6%89%8B%E5%8A%A8%E6%8C%87%E5%AE%9A"><span class="toc-number">8.3.2.2.</span> <span class="toc-text">方案2：命令操作手动指定</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%96%AA%E7%81%AB%E7%9B%B8%E4%BC%A0"><span class="toc-number">8.3.3.</span> <span class="toc-text">薪火相传</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E5%AE%A2%E4%B8%BA%E4%B8%BB"><span class="toc-number">8.3.4.</span> <span class="toc-text">反客为主</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E5%88%B6%E5%8E%9F%E7%90%86%E5%92%8C%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="toc-number">8.4.</span> <span class="toc-text">复制原理和工作流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E5%88%B6%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="toc-number">8.5.</span> <span class="toc-text">复制的缺点</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis%E5%93%A8%E5%85%B5%EF%BC%88sentinel%EF%BC%89"><span class="toc-number">9.</span> <span class="toc-text">Redis哨兵（sentinel）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0-4"><span class="toc-number">9.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4-1"><span class="toc-number">9.2.</span> <span class="toc-text">步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-1"><span class="toc-number">9.2.1.</span> <span class="toc-text">配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%A8%E5%85%B5%E9%83%A8%E5%88%86"><span class="toc-number">9.2.2.</span> <span class="toc-text">哨兵部分</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%A8%E5%85%B5%E5%8E%9F%E7%90%86"><span class="toc-number">9.3.</span> <span class="toc-text">哨兵原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B-%E6%95%85%E9%9A%9C%E5%88%87%E6%8D%A2"><span class="toc-number">9.3.1.</span> <span class="toc-text">运行流程 故障切换</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%93%A8%E5%85%B5%E4%BD%BF%E7%94%A8%E5%BB%BA%E8%AE%AE"><span class="toc-number">9.4.</span> <span class="toc-text">哨兵使用建议</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Redis%E9%9B%86%E7%BE%A4%EF%BC%88cluster%EF%BC%89"><span class="toc-number">10.</span> <span class="toc-text">Redis集群（cluster）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0-5"><span class="toc-number">10.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E7%AE%97%E6%B3%95-%E5%88%86%E7%89%87-%E6%A7%BD%E4%BD%8Dslot"><span class="toc-number">10.2.</span> <span class="toc-text">集群算法-分片-槽位slot</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A7%BD%E4%BD%8Dslot%E4%B8%8E%E5%88%86%E7%89%87"><span class="toc-number">10.2.1.</span> <span class="toc-text">槽位slot与分片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#slot%E6%A7%BD%E4%BD%8D%E6%98%A0%E5%B0%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">10.2.2.</span> <span class="toc-text">slot槽位映射解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E5%8F%96%E4%BD%99%E5%88%86%E5%8C%BA"><span class="toc-number">10.2.2.1.</span> <span class="toc-text">哈希取余分区</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E8%87%B4%E6%80%A7%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95"><span class="toc-number">10.2.2.2.</span> <span class="toc-text">一致性哈希算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E6%A7%BD%E5%88%86%E5%8C%BA%EF%BC%88%E9%87%8D%E8%A6%81%EF%BC%89"><span class="toc-number">10.2.2.3.</span> <span class="toc-text">哈希槽分区（重要）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Redis%E9%9B%86%E7%BE%A4%E6%9C%80%E5%A4%A7%E6%A7%BD%E6%95%B0%E6%98%AF16384%E4%B8%AA"><span class="toc-number">10.2.3.</span> <span class="toc-text">Redis集群最大槽数是16384个</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E5%9B%A0"><span class="toc-number">10.2.3.1.</span> <span class="toc-text">原因</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/CSS3.html" title="CSS3"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/14-H5C3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSS3"/></a><div class="content"><a class="title" href="/posts/CSS3.html" title="CSS3">CSS3</a><time datetime="2023-07-10T00:18:42.000Z" title="发表于 2023-07-10 08:18:42">2023-07-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/HTML5.html" title="HTML5"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/14-H5C3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTML5"/></a><div class="content"><a class="title" href="/posts/HTML5.html" title="HTML5">HTML5</a><time datetime="2023-07-10T00:18:42.000Z" title="发表于 2023-07-10 08:18:42">2023-07-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/H5C3.html" title="H5C3"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/14-H5C3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="H5C3"/></a><div class="content"><a class="title" href="/posts/H5C3.html" title="H5C3">H5C3</a><time datetime="2023-07-10T00:18:42.000Z" title="发表于 2023-07-10 08:18:42">2023-07-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Linux.html" title="Linux"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/13-Linux.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux"/></a><div class="content"><a class="title" href="/posts/Linux.html" title="Linux">Linux</a><time datetime="2023-07-07T07:02:48.000Z" title="发表于 2023-07-07 15:02:48">2023-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/Redis.html" title="Redis"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://typora8112.oss-cn-beijing.aliyuncs.com/byxl8112-pictures/12-Redis.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Redis"/></a><div class="content"><a class="title" href="/posts/Redis.html" title="Redis">Redis</a><time datetime="2023-07-07T04:06:47.000Z" title="发表于 2023-07-07 12:06:47">2023-07-07</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023  <i id="heartbeat" class="fa fas fa-heartbeat"></i> byxl8112</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>var preloader = {
   endLoading: () => {
     document.body.style.overflow = 'auto';
     document.getElementById('loading-box').classList.add("loaded")
