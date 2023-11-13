@@ -1,3 +1,4 @@
+https://byxl8112.github.io/posts/JS.html
 https://byxl8112.github.io/posts/14-2-1.html
 https://byxl8112.github.io/posts/MongoDB.html
 https://byxl8112.github.io/posts/Nginx.html
