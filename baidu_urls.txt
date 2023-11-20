@@ -20,3 +20,4 @@ https://byxl8112.github.io/posts/Maven.html
 https://byxl8112.github.io/posts/Git.html
 https://byxl8112.github.io/posts/MySQL.html
 https://byxl8112.github.io/posts/1.html
+https://byxl8112.github.io/posts/1.html
