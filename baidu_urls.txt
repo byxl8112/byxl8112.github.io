@@ -1,3 +1,4 @@
+https://byxl8112.github.io/posts/webpack222222222.html
 https://byxl8112.github.io/posts/webpack.html
 https://byxl8112.github.io/posts/web-APIs.html
 https://byxl8112.github.io/posts/JS.html
@@ -19,5 +20,4 @@ https://byxl8112.github.io/posts/JavaWeb.html
 https://byxl8112.github.io/posts/Maven.html
 https://byxl8112.github.io/posts/Git.html
 https://byxl8112.github.io/posts/MySQL.html
-https://byxl8112.github.io/posts/1.html
 https://byxl8112.github.io/posts/1.html
