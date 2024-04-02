@@ -1,5 +1,8 @@
 https://byxl8112.github.io/posts/21-1-2.html
 https://byxl8112.github.io/posts/21-1-1.html
+https://byxl8112.github.io/posts/NodeJS.html
+https://byxl8112.github.io/posts/1.html
+https://byxl8112.github.io/posts/JS-jj.html
 https://byxl8112.github.io/posts/webpack2.html
 https://byxl8112.github.io/posts/web-APIs.html
 https://byxl8112.github.io/posts/JS.html
